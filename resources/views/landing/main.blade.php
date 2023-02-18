@@ -11,8 +11,11 @@
                     </p>
                     <div class="hero-cta">
                         <a class="button button-primary" href="https://play.google.com/store/apps/details?id=explicador.co.mz&hl=pt&gl=US" target="_blank">Baixar o aplicativo</a>
-                        <a class="button" href="/admin">Entrar</a>
-
+                        @if(auth()->check())
+                        <a class="button" href="/admin/profile">Perfil</a>
+                        @else
+                        <a class="button" href="/admin">Perfil</a>
+                        @endif
                     </div>
                 </div>
                 <div class="hero-figure anime-element">
@@ -58,14 +61,15 @@
                     <div class="feature text-center is-revealing">
                         <div class="feature-inner">
                             <div class="feature-icon">
-                                <img src="{{ asset('template/dist/images/feature-icon-02.svg')}}" alt="Feature 02">
+                                <img src="{{ asset('template/dist/images/feature-icon-04.svg')}}" alt="Feature 02">
                             </div>
 
                             <h4 class="feature-title mt-24">
-                                Laravel o framework PHP
+                            Aprendizagem Baseada em Jogos
                             </h4>
                             <p class="text-sm mb-0">
-                                Laravel é um framework de aplicação web com sintaxe expressiva e elegante. Nós já lançamos as bases para criar sem se preocupar com as pequenas coisas.
+                                Com a nossa abordagem única, os alunos adotam a aprendizagem à medida que respondem as perguntas, promovendo a aprendizagem clara, ativa e uma mentalidade de crescimento.
+
                             </p>
 
                         </div>
@@ -80,10 +84,10 @@
                                 >
                             </div>
                             <h4 class="feature-title mt-24">
-                                Ganhe experiência
+                            Desenvolvimento Profissional
                             </h4>
                             <p class="text-sm mb-0">
-                                Todas as partes do ecossistema são poderosas, bem projetadas, divertidas de trabalhar e possuem documentação estelar. É uma alegria fazer parte da comunidade amigável e útil ao redor.
+                            Aprenda as habilidades para melhorar seu desenvolvimento profissional . Ganhe até 40 horas de crédito a qualquer momento, a partir de qualquer dispositivo.
                             </p>
                         </div>
                     </div>
@@ -91,7 +95,7 @@
                         <div class="feature-inner">
                             <div class="feature-icon">
                                 <img
-                                    src="{{ asset('template/dist/images/feature-icon-04.svg')}}"
+                                    src="{{ asset('template/dist/images/feature-icon-02.svg')}}"
                                     alt="Feature 01"
                                     style="width: 70px; height: 65px"
                                 >
@@ -99,11 +103,10 @@
 
                             <h4 class="feature-title mt-24">
 
-                                Comunidade Laravel
+                                Aprenda Linguas
                             </h4>
                             <p class="text-sm mb-0">
-                                Laravel cresceu para ser uma comunidade inovadora e ativa incrível. Laravel é muito mais do que apenas um framework PHP com uma velocidade de desenvolvimentos incrível e um grande prazer de uso.
-                            </p>
+                            Fica fácil criar o hábito de aprender idiomas com recursos que parecem de jogo! No site você terá acesso gratuito a exercícios, lições e testes que podem ajudá-lo a aprender linguas.
                         </div>
                     </div>
                     <div class="feature text-center is-revealing">
@@ -117,10 +120,12 @@
                             </div>
 
                             <h4 class="feature-title mt-24">
-                                Divirta-se com Laravel
+                                Estude para o Exame
                             </h4>
                             <p class="text-sm mb-0">
-                                Crie aplicativos robustos e full-stack em PHP usando Laravel e Livewire . Adora JavaScript? Construa um frontend monolítico orientado a React ou Vue, emparelhando Laravel com Inertia .
+                            O eMazaGame é o jogo de perguntas e respostas perfeito pra você se preparar para o exame e concursos.
+                            Você não precisa ficar horas estudando diversos conteúdos, com o eMazaGame você descomplica seus estudos de forma rápida e precisa, e ainda aprende enquanto se diverte.
+
                             </p>
                         </div>
                     </div>
@@ -135,10 +140,10 @@
                             </div>
 
                             <h4 class="feature-title mt-24">
-                                Mova-se rápido com confiança
+                                Aprenda e Divirta-se!
                             </h4>
                             <p class="text-sm mb-0">
-                                O Laravel está comprometido em oferecer a melhor experiência de teste que você pode imaginar. Belas APIs de teste, propagação de banco de dados e testes de navegador.
+                            Esta seção é dedicada ao aprendizado de um jeito descontraído, estimulando a capacidade de interpretação do conteúdo a partir de jogos. Estude brincando!
                             </p>
                         </div>
                     </div>
