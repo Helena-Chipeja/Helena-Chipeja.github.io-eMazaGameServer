@@ -4,7 +4,7 @@
         <div class="site-footer-inner">
             <div class="brand footer-brand">
                 <a href="#">
-                    <img class="header-logo-image" src="{{ asset('contents/logo1.jpg')}}" alt="Logo" style="width: 50px; height: 70px">
+                <img class="header-logo-image" src="{{ asset('contents/eMazaGame.png')}}" alt="Logo" style="width: 80px; height: 80px" >
                 </a>
             </div>
             <ul class="footer-links list-reset">

@@ -8,9 +8,9 @@
                     <a href="#">
                         <img
                             class="header-logo-image"
-                            src="{{ asset('contents/logo1.jpg')}}"
+                            src="{{ asset('contents/eMazaGame.png')}}"
                             alt="Logo"
-                             style="width: 50px; height: 50px"
+                             style="width: 80px; height: 80px"
                         >
 
                     </a>
